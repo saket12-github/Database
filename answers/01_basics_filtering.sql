@@ -38,7 +38,7 @@ SELECT DISTINCT call_status FROM `crm_lead_request`
 -- Your answer:
 SELECT * 
 FROM `crm_lead_request` 
-WHERE LOWER(name) LIKE 'A%' OR LOWER(name) LIKE '%sh%'
+WHERE LOWER(name) LIKE 'a%' OR LOWER(name) LIKE '%sh%'
 
 
 -- Q7. List leads where address_city IS NULL.
