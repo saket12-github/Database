@@ -28,12 +28,12 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [x] Q10 ✅
 
 ## Topic 3 — Joins (`03_joins.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
+- [x] Q1 ✅
+- [x] Q2 ✅
+- [x] Q3 ✅
 - [ ] Q4
-- [ ] Q5
-- [ ] Q6
+- [x] Q5 ✅
+- [ ] Q6 🔁 (incorrect — doesn't join crm_lead_vision, see review feedback)
 - [ ] Q7
 - [ ] Q8
 
