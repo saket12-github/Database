@@ -16,16 +16,16 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [x] Q10 ✅
 
 ## Topic 2 — Aggregation & Grouping (`02_aggregation_grouping.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
-- [ ] Q4
-- [ ] Q5
-- [ ] Q6
-- [ ] Q7
-- [ ] Q8
-- [ ] Q9
-- [ ] Q10
+- [x] Q1 ✅
+- [x] Q2 ✅
+- [x] Q3 ✅ (works, but see note on COUNT(col) vs COUNT(*) with NULLs in review feedback)
+- [x] Q4 ✅
+- [x] Q5 ✅
+- [x] Q6 ✅
+- [x] Q7 ✅
+- [x] Q8 ✅
+- [x] Q9 ✅ (works, but see note on COUNT(col) vs COUNT(*) with NULLs)
+- [x] Q10 ✅
 
 ## Topic 3 — Joins (`03_joins.sql`)
 - [ ] Q1
