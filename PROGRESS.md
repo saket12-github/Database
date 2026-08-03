@@ -33,9 +33,9 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [x] Q3 ✅
 - [ ] Q4
 - [x] Q5 ✅
-- [ ] Q6 🔁 (incorrect — doesn't join crm_lead_vision, see review feedback)
-- [ ] Q7
-- [ ] Q8
+- [ ] Q6 (blank — previous attempt was incorrect, needs rework)
+- [x] Q7 ✅
+- [x] Q8 ✅
 
 ## Topic 4 — Subqueries (`04_subqueries.sql`)
 - [ ] Q1

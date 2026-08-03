@@ -59,25 +59,26 @@ ON a.id = b.lead_id GROUP BY a.id, a.name;
 
 -- Q6. Find leads who have both a note in crm_lead_notes AND at least one
 -- Your answer:
-SELECT a.id, a.name 
-FROM `crm_lead_request` as a
-RIGHT JOIN `crm_lead_notes` as b
-ON a.id = b.lead_id
-GROUP BY a.id
-HAVING count(a.id)>1
 
 --     entry in crm_lead_vision (join both tables to crm_lead_request).
 
 
 -- Q7. List lead name, email_id and every question/answer pair from crm_lead_vision
 -- Your answer:
-
+SELECT a.id, a.name, a.email_id, b.question, b.answer
+FROM `crm_lead_request` as a
+JOIN `crm_lead_vision` as b
+ON a.id = b.lead_id
 
 --     for that lead.
 
 
 -- Q8. Find all leads whose call_status in crm_lead_request_call_log is 'Unreachable',
 -- Your answer:
+SELECT a.name, a.mobileno, b.add_date
+FROM crm_lead_request AS a
+JOIN crm_lead_request_call_log AS b ON a.id = b.lead_id
+WHERE b.call_status = 'Unreachable';
 
 
 --     showing the lead's name, mobileno and the call's add_date.
