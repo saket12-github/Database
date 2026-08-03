@@ -4,16 +4,16 @@ Tick a box once you've written an answer in the matching `answers/*.sql` file.
 When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (needs another look) instead of just a checkmark.
 
 ## Topic 1 — Basics & Filtering (`01_basics_filtering.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
-- [ ] Q4
-- [ ] Q5
-- [ ] Q6
-- [ ] Q7
-- [ ] Q8
-- [ ] Q9
-- [ ] Q10
+- [x] Q1 ✅
+- [x] Q2 ✅
+- [x] Q3 ✅
+- [x] Q4 ✅ (works, but see note on BETWEEN + datetime in review feedback)
+- [x] Q5 ✅
+- [x] Q6 ✅ (works, but see note on collation/case-sensitivity)
+- [x] Q7 ✅
+- [x] Q8 ✅
+- [x] Q9 ✅
+- [x] Q10 ✅
 
 ## Topic 2 — Aggregation & Grouping (`02_aggregation_grouping.sql`)
 - [ ] Q1
