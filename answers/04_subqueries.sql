@@ -4,14 +4,21 @@
 
 -- Q1. Find all leads whose id appears in crm_lead_request_call_log (use IN subquery).
 -- Your answer:
-
-
-
+SELECT *
+FROM crm_lead_request
+WHERE id IN (
+SELECT DISTINCT lead_id
+FROM crm_lead_request_call_log
+)
 
 -- Q2. Find all leads who have NEVER been called (id NOT IN crm_lead_request_call_log,
 -- Your answer:
-
-
+SELECT *
+FROM crm_lead_request
+WHERE id NOT IN (
+SELECT lead_id
+FROM crm_lead_request_call_log
+)
 --     handle NULLs carefully).
 
 
