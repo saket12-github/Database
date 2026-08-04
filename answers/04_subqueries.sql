@@ -24,7 +24,13 @@ FROM crm_lead_request_call_log
 
 -- Q3. Find all leads that have at least one note, using EXISTS with crm_lead_notes.
 -- Your answer:
-
+SELECT *
+FROM crm_lead_request lr
+WHERE EXISTS (
+    SELECT 1
+    FROM crm_lead_notes n
+    WHERE n.lead_id = lr.id
+)
 
 
 
