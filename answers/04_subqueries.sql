@@ -61,20 +61,35 @@ WHERE add_date = (
 
 -- Q6. For each lead, show name and the number of calls logged for them using a
 -- Your answer:
-
+SELECT
+    lr.id,
+    lr.name,
+    (SELECT COUNT(*) FROM crm_lead_request_call_log AS b WHERE lr.id=b.lead_id) AS call_count 
+FROM crm_lead_request lr
 
 --     correlated subquery in the SELECT list (instead of a JOIN + GROUP BY).
 
 
 -- Q7. From crm_ai_agent_logs, find all rows where duration_ms is greater than
 -- Your answer:
-
+SELECT id, request_id, lead_id
+FROM `crm_ai_agent_logs` 
+WHERE duration_ms > (
+    SELECT AVG(duration_ms)
+    FROM crm_ai_agent_logs
+	)
 
 --     the average duration_ms across all rows.
 
 
 -- Q8. Find leads whose status is 'converted' and who also have a row in
 -- Your answer:
-
+SELECT * 
+FROM `crm_lead_request` lr
+WHERE lr.status = 'converted' AND lr.id IN (
+    SELECT b.lead_id 
+    FROM crm_lead_vision b 
+    WHERE b.lead_id = lr.id
+)
 
 --     crm_lead_vision (use IN with a subquery on lead_id).

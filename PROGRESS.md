@@ -38,14 +38,14 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [x] Q8 ✅
 
 ## Topic 4 — Subqueries (`04_subqueries.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
-- [ ] Q4
-- [ ] Q5
-- [ ] Q6
-- [ ] Q7
-- [ ] Q8
+- [x] Q1 ✅
+- [x] Q2 ✅
+- [x] Q3 ✅
+- [x] Q4 ✅
+- [x] Q5 ✅
+- [x] Q6 ✅ (correlated subquery count matches JOIN+GROUP BY exactly)
+- [x] Q7 ✅
+- [x] Q8 ✅ (works, but see note on unneeded correlation inside the IN subquery)
 
 ## Topic 5 — String & Date Functions (`05_string_date_functions.sql`)
 - [ ] Q1
