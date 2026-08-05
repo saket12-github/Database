@@ -53,3 +53,5 @@ Topics (roughly increasing difficulty):
 
 Local MySQL, database `salestest`. Use your own MySQL client of choice (CLI, VS Code MySQL/SQL
 extension, DBeaver, etc.) pointed at `localhost`, schema `salestest`.
+
+CLI example: `mysql -u root -proot salestest`

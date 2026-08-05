@@ -36,14 +36,25 @@ WHERE EXISTS (
 
 -- Q4. Find all leads that have no conversation messages at all, using NOT EXISTS
 -- Your answer:
-
+SELECT *
+FROM crm_lead_request lr
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM crm_lead_conversations n
+    WHERE n.lead_id = lr.id
+)
 
 --     with crm_lead_conversations.
 
 
 -- Q5. Find the lead(s) with the most recent add_date, using a subquery
 -- Your answer:
-
+SELECT *
+FROM crm_lead_request
+WHERE add_date = (
+    SELECT MAX(add_date)
+    FROM crm_lead_request
+    )
 
 --     (WHERE add_date = (SELECT MAX(add_date) ...)).
 
