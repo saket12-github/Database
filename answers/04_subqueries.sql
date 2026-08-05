@@ -87,9 +87,8 @@ WHERE duration_ms > (
 SELECT * 
 FROM `crm_lead_request` lr
 WHERE lr.status = 'converted' AND lr.id IN (
-    SELECT b.lead_id 
-    FROM crm_lead_vision b 
-    WHERE b.lead_id = lr.id
+    SELECT lead_id FROM crm_lead_vision
 )
+
 
 --     crm_lead_vision (use IN with a subquery on lead_id).
