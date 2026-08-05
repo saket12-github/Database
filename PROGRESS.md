@@ -48,15 +48,15 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [x] Q8 ✅ (works, but see note on unneeded correlation inside the IN subquery)
 
 ## Topic 5 — String & Date Functions (`05_string_date_functions.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
-- [ ] Q4
-- [ ] Q5
-- [ ] Q6
-- [ ] Q7
-- [ ] Q8
-- [ ] Q9
+- [x] Q1 ✅
+- [x] Q2 ✅
+- [x] Q3 ✅
+- [x] Q4 ✅
+- [x] Q5 ✅
+- [x] Q6 ✅ (works, but hint suggested MONTH()/YEAR(); MONTHNAME() was tried first and also works)
+- [x] Q7 ✅
+- [x] Q8 ✅
+- [x] Q9 ✅
 
 ## Topic 6 — Window Functions (`06_window_functions.sql`)
 - [ ] Q1
