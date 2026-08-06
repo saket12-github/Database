@@ -82,13 +82,13 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [ ] Q4
 
 ## Topic 9 — DDL & DML Practice (`09_ddl_dml_practice.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
-- [ ] Q4
-- [ ] Q5
-- [ ] Q6
-- [ ] Q7
+- [x] Q1 ✅
+- [x] Q2 ✅
+- [x] Q3 ✅
+- [x] Q4 ✅
+- [x] Q5 ✅ (fixed table name typo — ALTER TABLE referenced `practice_students` while Q1 had created `practise_students`; renamed table to `practice_students` throughout for consistency)
+- [x] Q6 ✅
+- [x] Q7 ✅
 
 ---
 **Total: 72 questions across 9 topics.**
