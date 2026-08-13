@@ -76,10 +76,10 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [ ] Q6
 
 ## Topic 8 — Set Operations (`08_set_operations.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
-- [ ] Q4
+- [x] Q1 ✅
+- [x] Q2 ✅
+- [x] Q3 ✅
+- [x] Q4 ✅
 
 ## Topic 9 — DDL & DML Practice (`09_ddl_dml_practice.sql`)
 - [x] Q1 ✅
