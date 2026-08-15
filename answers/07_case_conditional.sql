@@ -52,13 +52,23 @@ WHERE 1
 
 -- Q5. Count how many leads fall into each of the priority buckets defined in
 -- Your answer:
-
+SELECT
+  CASE
+    WHEN status = 'converted' THEN 'High'
+    WHEN status = 'customer replied' OR status = 'reply sent to customer' THEN 'Medium'
+    ELSE 'Low'
+  END AS priority,
+  COUNT(*) AS lead_count
+FROM crm_lead_request
+GROUP BY priority;
 
 --     Q1 (combine CASE with GROUP BY).
 
 
 -- Q6. Show each lead's call_status from crm_lead_request, replacing empty
 -- Your answer:
-
+SELECT name, IF(call_status='', 'Not Contacted', call_status) AS _is_contacted
+FROM `crm_lead_request` 
+WHERE 1
 
 --     string '' with 'Not Contacted'.

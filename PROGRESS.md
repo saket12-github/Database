@@ -72,8 +72,8 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [x] Q2 ✅ (works — note: a few rows have lead_utm_source = '' (empty string) not NULL, so IFNULL correctly leaves them blank rather than 'Unknown'; that's the literal question's spec, but watch for empty-string vs NULL distinction)
 - [x] Q3 ✅
 - [x] Q4 ✅ (correctly handles the edge case status='error' AND http_status=200 → 'Check')
-- [ ] Q5
-- [ ] Q6
+- [x] Q5 ✅ (correct — note: 'High' bucket doesn't appear at all since no lead has status='converted'; GROUP BY only emits groups for values present in the data, it doesn't show 0-count buckets)
+- [x] Q6 ✅ (works — alias `_is_contacted` is a bit misleading since it holds the status text, not a yes/no flag, but logic is correct)
 
 ## Topic 8 — Set Operations (`08_set_operations.sql`)
 - [x] Q1 ✅
