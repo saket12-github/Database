@@ -68,10 +68,10 @@ When you ask Claude to check a batch, it will mark them ✅ (correct) or 🔁 (n
 - [ ] Q7
 
 ## Topic 7 — CASE & Conditional Logic (`07_case_conditional.sql`)
-- [ ] Q1
-- [ ] Q2
-- [ ] Q3
-- [ ] Q4
+- [x] Q1 ✅
+- [x] Q2 ✅ (works — note: a few rows have lead_utm_source = '' (empty string) not NULL, so IFNULL correctly leaves them blank rather than 'Unknown'; that's the literal question's spec, but watch for empty-string vs NULL distinction)
+- [x] Q3 ✅
+- [x] Q4 ✅ (correctly handles the edge case status='error' AND http_status=200 → 'Check')
 - [ ] Q5
 - [ ] Q6
 
