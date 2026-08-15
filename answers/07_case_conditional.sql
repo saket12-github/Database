@@ -67,7 +67,7 @@ GROUP BY priority;
 
 -- Q6. Show each lead's call_status from crm_lead_request, replacing empty
 -- Your answer:
-SELECT name, IF(call_status='', 'Not Contacted', call_status) AS _is_contacted
+SELECT name, IF(call_status='', 'Not Contacted', call_status) AS call_status
 FROM `crm_lead_request` 
 WHERE 1
 
